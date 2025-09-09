@@ -4,8 +4,9 @@ Welcome to the **Code Unlearning** repository 🌟! Here, we provide a PyTorch i
 Our work focuses on a novel approach to reduce specific sensitive memorization within Code Language Models (CLMs), contributing to the field of ethical software engineering. 
 
 We invite the community to engage with our findings and methodology. For any issues or inquiries regarding the code, please utilize the `Issues` section for support.
+Our implementation has also been presented in the open-source project [NaturalCC](https://github.com/CGCL-codes/naturalcc), linked at [https://github.com/CGCL-codes/naturalcc/tree/main/examples/code-unlearning](https://github.com/CGCL-codes/naturalcc/tree/main/examples/code-unlearning).
 
-<img src="./assets/Illustration.jpg" style="zoom: 100%;"/>
+<img src="./assets/Illustration.jpg" />
 
 **Repository Overview:**
 - [Environment Configuration](#environment-configuration) - Instructions for setting up the necessary environment to run our code.
@@ -130,7 +131,7 @@ This modification allows `PyTorch Lightning` to support the custom iterative tra
 In our study, we establish a systematic pipeline specifically designed to identify and quantify sensitive memorization within CLMs. 
 This pipeline underpins the creation of a novel dataset containing extracted sensitive memorization data, which is instrumental for further research.
 
-<img src="./assets/SensitiveMemorizationDetection.jpg" style="zoom: 100%;"/>
+<img src="./assets/SensitiveMemorizationDetection.jpg" />
 
 ### Building Memorization Thresholds
 
@@ -216,7 +217,7 @@ We then quantify the memorization of these identified sensitive data by computin
 For example, the following figure depicts the memorization distribution across sensitive data for the `codeparrot/codeparrot-small` and `Salesforce/codegen-350M-mono` models.
 It highlights that a large number of instances are flagged as high-risk ones above the established memorization threshold.
 
-<img src="./assets/MemorizationDistribution.jpg" style="zoom: 100%;"/>
+<img src="./assets/MemorizationDistribution.jpg" width="600"/>
 
 Perform the following steps to conduct sensitive memorization quantification for the studied models:
 1. Generate masks for secrets within the token sequence of each code instance:
@@ -253,7 +254,7 @@ This dataset serves as the foundation for targeted unlearning strategies to miti
 In our work, we introduce **CodeEraser**, an innovative solution for selectively erasing sensitive memorization within CLMs through machine unlearning while preserving overall model utility.
 We use the `Salesforce/codegen-2B-mono` model as an example to illustrate the implementation of CodeEraser in the following.
 
-<img src="./assets/Unlearning.jpg" style="zoom: 100%;"/>
+<img src="./assets/Unlearning.jpg" />
 
 ### Forgotten Sets and Retained Sets
 
