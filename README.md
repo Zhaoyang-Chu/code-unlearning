@@ -1,6 +1,6 @@
 # Code Unlearning: Implementation of Machine Unlearning in Code Language Models
 
-Welcome to the **Code Unlearning** repository 🌟! Here, we provide a PyTorch implementation for our ICSE'26 paper 📚 titled "Scrub It Out! Erasing Sensitive Memorization in Code Language Models via Machine Unlearning". 
+Welcome to the **Code Unlearning** repository 🌟! Here, we provide a PyTorch implementation for our ICSE'26 paper 📚 titled "[Scrub It Out! Erasing Sensitive Memorization in Code Language Models via Machine Unlearning](https://arxiv.org/abs/2509.13755)". 
 Our work focuses on a novel approach to reduce specific sensitive memorization within Code Language Models (CLMs), contributing to the field of ethical software engineering. 
 
 We invite the community to engage with our findings and methodology. For any issues or inquiries regarding the code, please utilize the `Issues` section for support.
